@@ -1,9 +1,0 @@
----
-- hosts: mikrotik
-
-  tasks:
-
-    - name: Cambiar las DNS
-      routeros_command:
-       commands:
-       - /ip/dns set cache-max-ttl=1d cache-size=56000KiB servers=1.1.1.1,1.0.0.1,8.8.8.8,8.8.4.4,208.67.220.220,208.67.222.222,9.9.9.9,2606:4700:4700::1111,2606:4700:4700::1001,2001:4860:4860::8888,2001:4860:4860::8844
